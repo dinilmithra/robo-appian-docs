@@ -119,16 +119,6 @@ both session and per-test browser lifetimes. Environment changes inside a test
 are too late after browser creation, and an autouse fixture alone does not establish
 an explicit dependency on the browser fixture.
 
-## Recorder versus test execution
-
-`robo-appian recorder record`, `review`, and `demo` always launch a visible browser
-for interaction. `HEAD_LESS` controls generated pytest execution, not the interactive
-recorder. `--start-recording` controls when capture starts; it does not change
-browser visibility. The recorder has no `--headless` option.
-
-Headless mode does not bypass SSO. Each fresh session must still complete the
-application's required security banner and authentication steps.
-
 ## Check the effective setting
 
 Browser-launch logs include `headless=False` or `headless=True`. The presence of

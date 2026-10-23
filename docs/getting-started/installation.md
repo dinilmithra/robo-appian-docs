@@ -1,6 +1,6 @@
 # Installation
 
-Install `robo-appian` into the Python environment that runs your tests. The package provides Appian-specific components and a platform-independent CLI for provisioning framework-managed browser binaries. Generic the browser automation runtime wrappers and pytest lifecycle are supplied by its `robo-automation` dependency.
+Install `robo-appian` into the Python environment that runs your tests. The package provides Appian-specific components. Provision browser binaries with `python -m playwright install`. The `appian` command is provided separately by `robo-test-studio`. Generic browser automation runtime wrappers and pytest lifecycle are supplied by its `robo-automation` dependency.
 
 ## Requirements
 
@@ -31,31 +31,31 @@ The CLI invokes the browser automation runtime with the **current Python interpr
 Install the full framework-managed browser set:
 
 ```bash
-robo-appian install-browser
+python -m playwright install
 ```
 
 `all` is an explicit alias for the same full install:
 
 ```bash
-robo-appian install-browser all
+python -m playwright install
 ```
 
 Install only one engine:
 
 ```bash
-robo-appian install-browser firefox
-robo-appian install-browser chromium
-robo-appian install-browser webkit
+python -m playwright install firefox
+python -m playwright install chromium
+python -m playwright install webkit
 ```
 
 With Poetry:
 
 ```bash
-poetry run robo-appian install-browser firefox
+poetry run python -m playwright install firefox
 ```
 
 !!! tip "Install the browser you actually run"
-    The default generic browser lifecycle uses `BROWSER=chromium` when no browser is configured. If your test environment sets `BROWSER=firefox`, install Firefox with `robo-appian install-browser firefox`.
+    The default generic browser lifecycle uses `BROWSER=chromium` when no browser is configured. If your test environment sets `BROWSER=firefox`, install Firefox with `python -m playwright install firefox`.
 
 ## Configure the runtime browser
 
@@ -77,7 +77,7 @@ HEAD_LESS=false
 Then provision the matching engine:
 
 ```bash
-robo-appian install-browser firefox
+python -m playwright install firefox
 ```
 
 ## Enable the pytest fixtures
@@ -117,8 +117,8 @@ python -c "import robo_appian; from robo_appian import AppianPage, AppianLocator
 Verify the CLI:
 
 ```bash
-robo-appian --help
-robo-appian install-browser --help
+appian --help
+python -m playwright install --help
 ```
 
 ## What installation does not configure

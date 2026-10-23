@@ -59,7 +59,7 @@ hide:
       <div class="ra-target-arch-flow">
         <div class="node"><span class="node-icon">▤</span><strong>Test Cases</strong><small>• Pytest tests<br>• Page objects<br>• Custom workflows</small></div>
         <b>→</b>
-        <div class="node library"><div class="library-brand"><img src="assets/images/robo-appian-icon.png" alt=""><span><strong>robo-appian</strong><small>Appian Component Layer</small></span></div><ul><li>Appian components</li><li>Label-oriented interactions</li><li>Reusable Appian utilities</li><li>Browser install CLI</li><li>Built on robo-automation</li></ul></div>
+        <div class="node library"><div class="library-brand"><img src="assets/images/robo-appian-icon.png" alt=""><span><strong>robo-appian</strong><small>Appian Component Layer</small></span></div><ul><li>Appian components</li><li>Label-oriented interactions</li><li>Reusable Appian utilities</li><li>Component runtime APIs</li><li>Built on robo-automation</li></ul></div>
         <b>→</b>
         <div class="node"><span class="node-icon">▣</span><strong>robo-automation + the browser automation runtime</strong><small>• Generic fixtures<br>• Robo* wrappers<br>• Browser engine</small></div>
       </div>

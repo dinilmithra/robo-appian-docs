@@ -5,21 +5,21 @@
 ## Install all browsers
 
 ```bash
-robo-appian install-browser
+python -m playwright install
 ```
 
 Equivalent explicit form:
 
 ```bash
-robo-appian install-browser all
+python -m playwright install
 ```
 
 ## Install one browser
 
 ```bash
-robo-appian install-browser firefox
-robo-appian install-browser chromium
-robo-appian install-browser webkit
+python -m playwright install firefox
+python -m playwright install chromium
+python -m playwright install webkit
 ```
 
 Internally, the command runs the equivalent of:
@@ -60,7 +60,7 @@ Install the browser during environment/bootstrap setup, not inside individual te
 
 ```bash
 pip install robo-appian
-robo-appian install-browser firefox
+python -m playwright install firefox
 pytest
 ```
 

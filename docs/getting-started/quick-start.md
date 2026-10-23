@@ -6,7 +6,7 @@ This page shows the shortest path from installation to a readable business-flow 
 
 ```bash
 pip install robo-appian
-robo-appian install-browser firefox
+python -m playwright install firefox
 ```
 
 ## 2. Write a simple test

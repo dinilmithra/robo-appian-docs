@@ -74,7 +74,7 @@ The consumer project may collect logs, screenshots, HTML and browser diagnostics
 | Windows recording save Access denied | Close file-locking programs; preserve the previous JSON and reported recovery temporary file. |
 | Test passes mapping validation but fails at runtime | Structural validation cannot prove current UI state, data or expected business behavior. Inspect failure evidence and exact targets. |
 
-See [Semantic recorder](../guides/recorder.md), [Headless execution](../guides/headless-execution.md),
+See [Recording guide](https://dinilmithra.github.io/robo-test-studio-docs/guide/), [Headless execution](../guides/headless-execution.md),
 and [Runtime configuration](../guides/runtime-configuration.md).
 
 ### Settings is present but a button assertion times out
