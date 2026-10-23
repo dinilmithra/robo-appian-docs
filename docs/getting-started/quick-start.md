@@ -1,45 +1,14 @@
-# Quick Start
+# Your first workflow
 
-This page shows the shortest path from installation to a readable business-flow test. You normally interact with Appian through `robo-appian`; `robo-automation` works underneath it to provide the test runtime.
+1. Choose a small business task with a known expected result.
+2. Confirm the starting page, user permissions and approved test data.
+3. Identify each field, button and menu using the labels visible in the application.
+4. Use the supported component for each interaction. See [components](../guides/components.md).
+5. Add checks for the required outcome, including important field values or status changes.
+6. Run one test with a visible browser and review the result.
+7. Add negative and boundary scenarios only when their expected outcomes are known.
 
-## 1. Install robo-appian and a browser
+A successful click does not prove that a business transaction succeeded.
+Keep expected results grounded in approved requirements.
 
-```bash
-pip install robo-appian
-python -m playwright install firefox
-```
-
-## 2. Write a simple test
-
-```python
-from robo_appian import AppianPage
-
-
-def test_update_item(page: AppianPage) -> None:
-    page.textbox(label="Description").fill("Example item")
-    page.date(label="Start Date").fill("10/15/2026")
-    page.radio(label="Priority").select("High")
-    page.button(name="Submit").click()
-```
-
-Read the code the same way a user would describe the page:
-
-1. Enter the item description.
-2. Enter the required date.
-3. Choose the item priority.
-4. Click Submit.
-
-## 3. Run it with pytest
-
-```bash
-pytest
-```
-
-Your application project normally owns the URL and login process. The `page` fixture is prepared by the automation framework.
-
-## What should I learn next?
-
-- [Writing a Business Flow](ba-workflow.md) shows how to translate business steps into automation.
-- [Your First Test](first-test.md) explains the test structure.
-- [Choosing a Component](component-basics.md) shows which API to use for common controls.
-- [Troubleshooting](troubleshooting.md) starts from common failure symptoms.
+See [verification](../guides/verification.md) and [troubleshooting](troubleshooting.md).

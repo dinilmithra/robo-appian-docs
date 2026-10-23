@@ -38,25 +38,6 @@ theme:
 
 plugins:
   - search
-  - mkdocstrings:
-      handlers:
-        python:
-          paths:
-            - .
-          options:
-            docstring_style: google
-            show_source: false
-            show_root_heading: true
-            show_root_full_path: false
-            show_object_full_path: false
-            show_signature_annotations: true
-            separate_signature: true
-            members_order: source
-            inherited_members: false
-            filters:
-              - "!^_"
-            # API pages opt in to callable members. Constructor and method
-            # parameters stay in signatures instead of becoming attribute headings.
 
 markdown_extensions:
   - md_in_html
@@ -75,55 +56,14 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Feature Guide: features.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Quick Start: getting-started/quick-start.md
-      - Writing a Business Flow: getting-started/ba-workflow.md
-      - Python Basics: getting-started/python-basics.md
-      - Core Concepts: getting-started/concepts.md
-      - Your First Test: getting-started/first-test.md
-      - Choosing a Component: getting-started/component-basics.md
-      - Troubleshooting: getting-started/troubleshooting.md
-      - Handling Errors: getting-started/error-handling.md
-  - Usage Guides:
-      - How the Libraries Work Together: guides/framework-architecture.md
-      - Common Framework Features: guides/common-framework-features.md
-      - Pytest Integration: guides/pytest-integration.md
-      - Browser Management: guides/browser-management.md
-      - Headless Execution: guides/headless-execution.md
-      - Action Snapshots: guides/action-snapshots.md
+  - Features: features.md
+  - Get Started:
+      - Install: getting-started/installation.md
+      - First Workflow: getting-started/quick-start.md
+  - Use Features:
       - Components: guides/components.md
-      - Component Recipes: guides/component-recipes.md
-      - Runtime Configuration: guides/runtime-configuration.md
-      - Verification and Errors: guides/verification.md
-  - API Reference:
-      - Overview: api/index.md
-      - Appian Page: api/appian-page.md
-      - Appian Locator: api/appian-locator.md
-      - Appian Scope: api/appian-scope.md
-      - Appian Button: api/appian-button.md
-      - Appian Textbox: api/appian-textbox.md
-      - Appian Text: api/appian-text.md
-      - Appian Date: api/appian-date.md
-      - Appian Dropdown: api/appian-dropdown.md
-      - Appian Checkbox: api/appian-checkbox.md
-      - Appian Radio Select: api/appian-radio-select.md
-      - Appian Link: api/appian-link.md
-      - Appian Tab: api/appian-tab.md
-      - Appian Grid: api/appian-grid.md
-      - Appian DataSet: api/appian-dataset.md
-      - Appian Menu: api/appian-menu.md
-      - Appian Dialog: api/appian-dialog.md
-      - Appian Column: api/appian-column.md
-      - Appian Data: api/appian-data.md
-      - Appian Row: api/appian-row.md
-      - Appian Cell: api/appian-cell.md
-      - Appian Input Component: api/appian-input-component.md
-      - Runtime: api/runtime.md
-      - Assertions: api/assertions.md
-      - Errors: api/errors.md
-      - Compatibility:
-          - Legacy Scope: api/scope.md
-  - Command-Line Interface: api/cli.md
+      - Verify Results: guides/verification.md
+      - Browser Mode: guides/headless-execution.md
+      - Evidence: guides/action-snapshots.md
+  - Troubleshooting: getting-started/troubleshooting.md
   - License: license.md
