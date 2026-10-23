@@ -17,7 +17,7 @@ hide:
       <p>A business-readable Python library for automating Appian workflows. Write automation using the labels, buttons, fields, tables, and dialogs a user sees; the framework handles the browser and Appian synchronization behind the scenes.</p>
       <div class="ra-target-actions">
         <a class="ra-target-btn primary" href="getting-started/ba-workflow/">🚀&nbsp; Start a Business Flow <span>→</span></a>
-        <a class="ra-target-btn" href="https://github.com/dinilmithra/robo-appian-docs">◉&nbsp; View docs on GitHub <span>↗</span></a>
+        <a class="ra-target-btn" href="features/">◉&nbsp; Explore Features <span>→</span></a>
       </div>
       <div class="ra-target-install"><span>pip</span><code>pip install robo-appian</code></div>
     </div>
