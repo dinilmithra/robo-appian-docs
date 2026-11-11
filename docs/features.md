@@ -5,7 +5,7 @@ RoboAppian lets an automation engineer interact with Appian controls using their
 | Feature | What you can do |
 | --- | --- |
 | Text fields | Enter values and send supported keyboard actions. |
-| Dates | Enter a date and move focus away to commit the value. |
+| Dates | Fill a date and immediately call `blur()` to commit it. |
 | Dropdowns | Select an actual choice by text or position; search supported dropdowns. |
 | Radio buttons and checkboxes | Set and check selections. |
 | Buttons, links and tabs | Navigate and perform application actions. |

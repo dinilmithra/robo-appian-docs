@@ -7,7 +7,7 @@
 | Menu is missing | Check window size, permissions and the required parent menu. |
 | Several controls have the same label | Identify the intended dialog, grid or business record and ask your automation team to refine the target. |
 | Search result is wrong | Check the entered search text separately from the selected option. |
-| Date change is not applied | Move focus away from the date field before checking the result. |
+| Date change is not applied | Call `blur()` immediately after filling the date; do not use Tab to commit it. |
 | Grid row changes between runs | Use a unique business value where available; review sorting, filters and paging. |
 | Browser is invisible | Check the project's execution setting for headless mode. |
 | No evidence is available | Check capture settings and selected formats before another run. |
