@@ -22,7 +22,7 @@ hide:
       <div class="ra-target-install"><span>Poetry</span><code>poetry add robo-appian</code></div>
     </div>
     <div class="ra-target-art">
-      <img src="assets/images/robo-appian-logo-3d.png" alt="robo-appian automation framework robot logo">
+      <img src="assets/images/robo-appian-logo-3d.png" alt="robo-appian geometric workflow logo">
       <div class="ra-target-float left one"><b>▶</b><span>Automate<br>Workflows</span></div>
       <div class="ra-target-float left two"><b>✓</b><span>Test<br>Processes</span></div>
       <div class="ra-target-float left three"><b>▥</b><span>Ensure<br>Quality</span></div>

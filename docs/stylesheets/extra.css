@@ -1069,9 +1069,9 @@
   box-shadow: 0 9px 24px rgba(47,91,213,.075);
 }
 .ra-layer-robo .ra-layer-number { background: #e7efff; color: #214fc6; }
-.ra-layer-playwright { border-top-color: #12a46f; }
-.ra-layer-playwright .ra-layer-number { background: #e8f7f1; color: #07865a; }
-.ra-layer-playwright .ra-layer-icon { background: #eefaf6; color: #07865a; }
+.ra-layer-browser { border-top-color: #12a46f; }
+.ra-layer-browser .ra-layer-number { background: #e8f7f1; color: #07865a; }
+.ra-layer-browser .ra-layer-icon { background: #eefaf6; color: #07865a; }
 .ra-layer-appian { border-top-color: #288ce8; }
 .ra-layer-appian .ra-layer-number { background: #eaf4ff; color: #1576d1; }
 .ra-layer-appian .ra-layer-icon { background: #edf6ff; color: #1576d1; }
@@ -1684,7 +1684,7 @@ html[data-md-color-scheme="default"] body { background: #f7f9fc; }
 [data-md-color-scheme="slate"] .ra-target-panel-title.light,
 [data-md-color-scheme="slate"] .ra-target-docs-head { background: #172235; border-color: #2a3a54; }
 
-/* ---------- Header branding: align with the current robo_appian 3D identity ---------- */
+/* ---------- Header branding: align with the current robo_appian geometric identity ---------- */
 .md-header__button.md-logo {
   display: inline-flex;
   align-items: center;
@@ -1705,7 +1705,7 @@ html[data-md-color-scheme="default"] body { background: #f7f9fc; }
   filter: drop-shadow(0 3px 5px rgba(7, 22, 66, .18));
 }
 
-/* The new logo already contains the robo_appian wordmark and framework subtitle. */
+/* The generated logo contains the ROBO APPIAN wordmark. */
 .md-header__button.md-logo + .md-header__title {
   display: none;
 }
